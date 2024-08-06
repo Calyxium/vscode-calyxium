@@ -1,0 +1,38 @@
+{
+    "name": "ptn",
+    "displayName": "Plutonium",
+    "publisher": "plutonium",
+    "description": "Rich Plutonium language support for Visual Studio Code",
+    "icon": "img/plutonium.png",
+    "version": "0.0.2",
+    "engines": {
+      "vscode": "^1.80.0"
+    },
+    "categories": [
+      "Programming Languages",
+      "Snippets",
+      "Linters"
+    ],
+    "contributes": {
+      "languages": [
+        {
+          "id": "ptn",
+          "aliases": [
+            "plutonium",
+            "ptn"
+          ],
+          "extensions": [
+            ".ptn"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "ptn",
+          "scopeName": "source.ptn",
+          "path": "./syntaxes/ptn.tmLanguage.json"
+        }
+      ]
+    }
+  }

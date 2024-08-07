@@ -1,27 +1,22 @@
 # Change Log
 
-## [0.0.3] - 2024-06-08
+## v0.0.3 - 07 Aug, 2024
 
-### Added
-
-- Keywords
-
-### Changes
-
-- Updated Syntax
-
-## [0.0.2] - 2024-06-08
-
-### Added
-
-- Keywords
+### Updates
+- Keywords: Added support for two new keywords: struct and static. This update ensures that these keywords are now properly recognized and highlighted in the syntax.
 
 ### Changes
+- Syntax: Updated syntax rules to include the newly added keywords. Adjustments were made to the parsing rules to ensure that struct and static are integrated smoothly with existing language constructs, improving accuracy in linting and highlighting.
 
-- Updated Syntax
+## v0.0.2 - 06 Aug, 2024
+
+### Added
+- Keywords: Introduced initial set of keywords for syntax highlighting and linting. This inclusion starts the process of defining and recognizing essential language constructs.
+
+### Changes
+- Syntax: Revised syntax rules to incorporate the initial set of keywords. The update enhances the accuracy of linting and highlighting by aligning with the initial language definitions.
 
 ## [Unreleased]
 
 ### Added
-
-- Initial release
+- Initial Release: Introduced the linter and syntax highlighting configuration for the language. This initial release provides basic support for syntax checking and visual differentiation of language constructs.

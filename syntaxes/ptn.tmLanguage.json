@@ -1,120 +1,121 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "plutonium",
-  "patterns": [
-      {
-          "include": "#comments"
-      },
-      {
-          "include": "#operators"
-      },
-      {
-          "include": "#strings"
-      },
-      {
-          "include": "#numbers"
-      },
-      {
-          "include": "#keywords"
-      },
-      {
-          "include": "#builtin-types"
-      },
-      {
-          "include": "#control-statements"
-      },
-      {
-          "include": "#variable-declarations"
-      }
-  ],
-  "repository": {
-      "comments": {
-          "patterns": [
-              {
-                  "name": "comment.line.hashtag.ptn",
-                  "match": "#.*$"
-              }
-          ]
-      },
-      "operators": {
-          "patterns": [
-              {
-                  "name": "keyword.operator.ptn",
-                  "match": "\\b(\\+\\+|--|\\+|-|\\*|/|&&|\\|\\||!=|==|<=|>=|<|>|!|\\|&|~)\\b"
-              },
-              {
-                  "name": "keyword.operator.assignment.ptn",
-                  "match": "\\b(\\+=|-=|\\*=|/=|=)\\b",
-                  "captures": {
-                      "0": {
-                          "name": "punctuation.definition.assignment.ptn"
-                      }
-                  }
-              }
-          ]
-      },
-      "strings": {
-          "name": "string.quoted.double.ptn",
-          "begin": "\"",
-          "end": "\"",
-          "patterns": [
-              {
-                  "name": "constant.character.escape.ptn",
-                  "match": "\\\\."
-              }
-          ]
-      },
-      "numbers": {
-          "patterns": [
-              {
-                  "name": "constant.numeric.ptn",
-                  "match": "\\b(\\d+(\\.\\d+)?)\\b"
-              }
-          ]
-      },
-      "keywords": {
-          "patterns": [
-              {
-                  "name": "keyword.control.ptn",
-                  "match": "\\b(function|if|else|return|let|const|switch|for|case|default|true|false|try|catch|import)\\b"
-              }
-          ]
-      },
-      "builtin-types": {
-          "patterns": [
-              {
-                  "name": "storage.type.builtin-types.ptn",
-                  "match": "\\b(int|float|string|boolean)\\b"
-              }
-          ]
-      },
-      "control-statements": {
-          "patterns": [
-              {
-                  "name": "keyword.control.ptn",
-                  "match": "\\b(if|else|for|switch)\\b"
-              }
-          ]
-      },
-      "variable-declarations": {
-          "patterns": [
-              {
-                  "name": "variable.other.declaration-ptn",
-                  "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
-                  "captures": {
-                      "1": {
-                          "name": "variable.other.declaration-ptn.name"
-                      }
-                  }
-              }
-          ]
-      }
-  },
-  "colors": {
-      "math": "#FF00FF",
-      "keyword.operator.assignment.ptn": "#FF0000",
-      "storage.type.declaration-ident.ptn": "#0072C6",
-      "storage.type.builtin-types.ptn": "#8c1aff"
-  },
-  "scopeName": "source.ptn"
-}
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "plutonium",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#builtin-types"
+        },
+        {
+            "include": "#control-statements"
+        },
+        {
+            "include": "#variable-declarations"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.hashtag.ptn",
+                    "match": "#.*$"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.ptn",
+                    "match": "\\b(\\+\\+|--|\\+|-|\\*|/|&&|\\|\\||!=|==|<=|>=|<|>|!|\\|&|~)\\b"
+                },
+                {
+                    "name": "keyword.operator.assignment.ptn",
+                    "match": "\\b(\\+=|-=|\\*=|/=|=)\\b",
+                    "captures": {
+                        "0": {
+                            "name": "punctuation.definition.assignment.ptn"
+                        }
+                    }
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.ptn",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.ptn",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.ptn",
+                    "match": "\\b(\\d+(\\.\\d+)?)\\b"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.ptn",
+                    "match": "\\b(function|if|else|return|let|const|switch|for|case|default|true|false|try|catch|import|struct|static)\\b"
+                }
+            ]
+        },
+        "builtin-types": {
+            "patterns": [
+                {
+                    "name": "storage.type.builtin-types.ptn",
+                    "match": "\\b(int|float|string|bool|any)\\b"
+                }
+            ]
+        },
+        "control-statements": {
+            "patterns": [
+                {
+                    "name": "keyword.control.ptn",
+                    "match": "\\b(if|else|for|switch)\\b"
+                }
+            ]
+        },
+        "variable-declarations": {
+            "patterns": [
+                {
+                    "name": "variable.other.declaration-ptn",
+                    "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
+                    "captures": {
+                        "1": {
+                            "name": "variable.other.declaration-ptn.name"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "colors": {
+        "math": "#FF00FF",
+        "keyword.operator.assignment.ptn": "#FF0000",
+        "storage.type.declaration-ident.ptn": "#0072C6",
+        "storage.type.builtin-types.ptn": "#8c1aff"
+    },
+    "scopeName": "source.ptn"
+  }
+  

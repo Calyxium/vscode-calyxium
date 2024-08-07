@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.0.2] - 2024-06-08
+## [0.0.3] - 2024-06-08
 
 ### Added
 
@@ -10,6 +10,15 @@
 
 - Updated Syntax
 
+## [0.0.2] - 2024-06-08
+
+### Added
+
+- Keywords
+
+### Changes
+
+- Updated Syntax
 
 ## [Unreleased]
 

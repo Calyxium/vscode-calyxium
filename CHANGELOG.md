@@ -1,5 +1,3 @@
-# Change Log
-
 ## v0.0.3 - 07 Aug, 2024
 
 ### Updates

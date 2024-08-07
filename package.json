@@ -4,7 +4,11 @@
     "publisher": "plutonium",
     "description": "Rich Plutonium language support for Visual Studio Code",
     "icon": "img/plutonium.png",
-    "version": "0.0.3",
+    "version": "0.0.4",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Plutonium-Lang/vscode-plutonium.git"
+    },
     "engines": {
       "vscode": "^1.80.0"
     },

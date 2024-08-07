@@ -1,4 +1,4 @@
-## v0.0.3 - 07 Aug, 2024
+## v0.0.4 - 07 Aug, 2024
 
 ### Updates
 - Keywords: Added support for two new keywords: struct and static. This update ensures that these keywords are now properly recognized and highlighted in the syntax.

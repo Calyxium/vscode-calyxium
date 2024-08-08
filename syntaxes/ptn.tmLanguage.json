@@ -40,7 +40,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.ptn",
-                    "match": "\\b(\\+\\+|--|\\+|-|\\*|/|&&|\\|\\||!=|==|<=|>=|<|>|!|\\|&|~)\\b"
+                    "match": "\\b(\\+\\+|--|\\+|-|\\*|/|&&|\\|\\||!=|==|<=|>=|<|>|!|\\|&)\\b"
                 },
                 {
                     "name": "keyword.operator.assignment.ptn",
@@ -76,7 +76,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.ptn",
-                    "match": "\\b(function|if|else|return|let|const|switch|for|case|default|true|false|try|catch|import|struct|static)\\b"
+                    "match": "\\b(function|if|else|return|let|const|case||true|false|try|catch|for|switch|default|import|class|new)\\b"
                 }
             ]
         },
@@ -118,4 +118,4 @@
     },
     "scopeName": "source.ptn"
   }
-  
+

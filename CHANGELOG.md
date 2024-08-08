@@ -1,3 +1,13 @@
+## v0.0.5 - 08 Aug, 2024
+
+### Updates
+- Keywords: Added support for multiple keywords. This update ensures that these keywords are now properly recognized and highlighted in the syntax.
+
+### Changes
+- Syntax: Updated syntax rules to include the newly added keywords. Adjustments were made to the parsing rules to ensures the new keywords are integrated smoothly with existing language constructs, improving accuracy in linting and highlighting.
+
+- Syntax: Removed keywords struct and static as updated to classes
+
 ## v0.0.4 - 07 Aug, 2024
 
 ### Updates

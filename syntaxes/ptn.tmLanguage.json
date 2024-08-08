@@ -76,7 +76,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.ptn",
-                    "match": "\\b(function|if|else|return|let|const|case||true|false|try|catch|for|switch|default|import|class|new)\\b"
+                    "match": "\\b(function|if|else|return|let|const|case|true|false|try|catch|for|switch|default|import|class|new)\\b"
                 }
             ]
         },

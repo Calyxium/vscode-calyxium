@@ -1,13 +1,13 @@
 {
-    "name": "ptn",
-    "displayName": "Plutonium",
-    "publisher": "plutonium",
-    "description": "Rich Plutonium language support for Visual Studio Code",
-    "icon": "img/plutonium.png",
-    "version": "0.0.5",
+    "name": "calyxium",
+    "displayName": "Calyxium",
+    "publisher": "Calyxium",
+    "description": "Rich Calyxium language support for Visual Studio Code",
+    "icon": "img/calyxium.jpg",
+    "version": "0.0.6",
     "repository": {
       "type": "git",
-      "url": "https://github.com/Plutonium-Lang/vscode-plutonium.git"
+      "url": "https://github.com/Calyxium/vscode-calyxium.git"
     },
     "engines": {
       "vscode": "^1.80.0"
@@ -20,22 +20,22 @@
     "contributes": {
       "languages": [
         {
-          "id": "ptn",
+          "id": "cx",
           "aliases": [
-            "plutonium",
-            "ptn"
+            "calyxium",
+            "cx"
           ],
           "extensions": [
-            ".ptn"
+            ".cx"
           ],
           "configuration": "./language-configuration.json"
         }
       ],
       "grammars": [
         {
-          "language": "ptn",
-          "scopeName": "source.ptn",
-          "path": "./syntaxes/ptn.tmLanguage.json"
+          "language": "cx",
+          "scopeName": "source.cx",
+          "path": "./syntaxes/cx.tmLanguage.json"
         }
       ]
     }

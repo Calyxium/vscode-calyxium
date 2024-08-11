@@ -1,3 +1,8 @@
+## v0.0.6 - 11 Aug, 2024
+
+### Changes
+- Syntax: Updated syntax rules to support new name change to former plutonium
+
 ## v0.0.5 - 08 Aug, 2024
 
 ### Updates

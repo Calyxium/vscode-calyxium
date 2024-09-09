@@ -6,9 +6,6 @@
             "include": "#comments"
         },
         {
-            "include": "#operators"
-        },
-        {
             "include": "#strings"
         },
         {
@@ -24,7 +21,7 @@
             "include": "#control-statements"
         },
         {
-            "include": "#variable-declarations"
+            "include": "#user-functions"
         }
     ],
     "repository": {
@@ -36,31 +33,29 @@
                 }
             ]
         },
-        "operators": {
+        "strings": {
             "patterns": [
                 {
-                    "name": "keyword.operator.cx",
-                    "match": "\\b(\\+\\+|--|\\+|-|\\*|/|&&|\\|\\||!=|==|<=|>=|<|>|!|\\|&)\\b"
+                    "name": "string.quoted.double.cx",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.cx",
+                            "match": "\\\\."
+                        }
+                    ]
                 },
                 {
-                    "name": "keyword.operator.assignment.cx",
-                    "match": "\\b(\\+=|-=|\\*=|/=|=)\\b",
-                    "captures": {
-                        "0": {
-                            "name": "punctuation.definition.assignment.cx"
+                    "name": "string.quoted.single.cx",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.cx",
+                            "match": "\\\\."
                         }
-                    }
-                }
-            ]
-        },
-        "strings": {
-            "name": "string.quoted.double.cx",
-            "begin": "\"",
-            "end": "\"",
-            "patterns": [
-                {
-                    "name": "constant.character.escape.cx",
-                    "match": "\\\\."
+                    ]
                 }
             ]
         },
@@ -75,8 +70,8 @@
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.control.cx",
-                    "match": "\\b(function|if|else|return|let|const|case|true|false|try|catch|for|switch|default|import|class|new)\\b"
+                    "name": "keyword.cx",
+                    "match": "\\b(fn|let|const|true|false|import|export|class|new|return)\\b"
                 }
             ]
         },
@@ -84,7 +79,7 @@
             "patterns": [
                 {
                     "name": "storage.type.builtin-types.cx",
-                    "match": "\\b(int|float|string|bool|any)\\b"
+                    "match": "\\b(int|float|string|bool|byte)\\b"
                 }
             ]
         },
@@ -92,30 +87,18 @@
             "patterns": [
                 {
                     "name": "keyword.control.cx",
-                    "match": "\\b(if|else|for|switch)\\b"
+                    "match": "\\b(if|else|for|switch|case|default|break)\\b"
                 }
             ]
         },
-        "variable-declarations": {
+        "user-functions": {
             "patterns": [
                 {
-                    "name": "variable.other.declaration-cx",
-                    "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
-                    "captures": {
-                        "1": {
-                            "name": "variable.other.declaration-cx.name"
-                        }
-                    }
+                    "name": "entity.name.function.cx",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
                 }
             ]
         }
     },
-    "colors": {
-        "math": "#FF00FF",
-        "keyword.operator.assignment.cx": "#FF0000",
-        "storage.type.declaration-ident.cx": "#0072C6",
-        "storage.type.builtin-types.cx": "#8c1aff"
-    },
     "scopeName": "source.cx"
-  }
-
+}

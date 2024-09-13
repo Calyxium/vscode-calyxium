@@ -71,7 +71,7 @@
             "patterns": [
                 {
                     "name": "keyword.cx",
-                    "match": "\\b(fn|let|const|true|false|import|export|class|new|return)\\b"
+                    "match": "\\b(fun|let|const|true|false|import|export|struct|new|return)\\b"
                 }
             ]
         },
